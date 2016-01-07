@@ -44,9 +44,8 @@ function larger (x, y){
 //------------------------------------------------------------------------------
 
 var ruleTester = new RuleTester();
-var msg = 'This function is between 600 and 615 characters.' +
-  'Functions 600 characters or less will be inlined by V8 and run faster';
-  
+var msg = 'Function length between 600 and 615 characters';
+
 ruleTester.run("v8-func-inline", rule, {
   valid: [{
       code: smaller.toString()
