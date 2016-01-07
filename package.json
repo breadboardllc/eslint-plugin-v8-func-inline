@@ -1,0 +1,17 @@
+{
+  "name": "eslint-v8-func-inline",
+  "version": "1.0.0",
+  "description": "ESLint rule to warn if a function is near 600 characters",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec tests/lib/rules/v8-func-inline.js"
+  },
+  "author": "Jordan Pellizzari",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^1.10.3"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4"
+  }
+}

@@ -1,0 +1,49 @@
+{
+    "rules": {
+        "indent": [
+            0,
+            4
+        ],
+        "quotes": [
+            0,
+            "single"
+        ],
+        "linebreak-style": [
+            2,
+            "unix"
+        ],
+        "semi": [
+            2,
+            "always"
+        ],
+        "no-unused-vars" : 0
+    },
+    "env": {
+        "es6": true,
+        "browser": true,
+        "node" : true
+    },
+    "globals" : {
+        "require": true,
+        "module" : true,
+        "xpsBusinessLogic": true   ,
+        "it" : true,
+        "describe" : true,
+        "beforeEach" : true,
+        "before" : true,
+        "after": true,
+        "afterEach" : true,
+        "exports" : true,
+        "$" : true,
+        "particlesJS": true,
+        "process" : true,
+    },
+    "extends": "eslint:recommended",
+    "ecmaFeatures": {
+        "jsx": true,
+        "experimentalObjectRestSpread": true
+    },
+    "plugins": [
+        "react"
+    ]
+}
