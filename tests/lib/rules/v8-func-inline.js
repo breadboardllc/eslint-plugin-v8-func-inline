@@ -1,5 +1,18 @@
-var RuleTester = require('eslint').RuleTester;
-var rule = require('../../../lib/rules/v8-func-inline');
+/**
+ * @fileoverview ESLint rule to warn if a function is near 600 characters
+ * @author
+ * @copyright 2016 . All rights reserved.
+ * See LICENSE file in root directory for full license.
+ */
+"use strict";
+
+//------------------------------------------------------------------------------
+// Requirements
+//------------------------------------------------------------------------------
+
+var rule = require("../../../lib/rules/v8-func-inline"),
+
+RuleTester = require("eslint").RuleTester;
 
 function smaller (x, y){
   // Addition is one of the four elementary,
@@ -26,18 +39,22 @@ function larger (x, y){
   return(x + y);
 }
 
-var ruleTester = new RuleTester();
+//------------------------------------------------------------------------------
+// Tests
+//------------------------------------------------------------------------------
 
+var ruleTester = new RuleTester();
 var msg = 'This function is between 600 and 615 characters.' +
   'Functions 600 characters or less will be inlined by V8 and run faster';
-ruleTester.run('v8-function-inline', rule, {
+  
+ruleTester.run("v8-func-inline", rule, {
   valid: [{
-    code: smaller.toString()
-  }],
-  invalid: [{
-    code: larger.toString(),
-    errors: [
-      { message: msg }
-    ]
-  }]
+      code: smaller.toString()
+    }],
+    invalid: [{
+      code: larger.toString(),
+      errors: [
+        { message: msg }
+      ]
+    }]
 });
