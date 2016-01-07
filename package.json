@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-v8-func-inline",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESLint rule to warn if a function is near 600 characters",
   "main": "index.js",
   "scripts": {
