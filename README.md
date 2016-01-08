@@ -1,7 +1,7 @@
 ESLint-plugin-v8-func-inline
 ===================
 
-Node.js's V8 optimizer (crankshaft) inlines the functions whose body length, including the comments, is less than 600 characters.
+Node.js's V8 optimizer (crankshaft) inlines the functions whose body length, including the comments, is less than 600 characters. This rule finds functions that could possibly be shortened to increase performance while running in V8 (Node.js).
 
 # Installation
 
