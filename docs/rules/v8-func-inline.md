@@ -54,7 +54,6 @@ plugins: [
   "v8-func-inline"
 ]
 
-
 ```
 ## Further Reading
 https://top.fse.guru/nodejs-a-quick-optimization-advice-7353b820c92e#.5zn6zjv94
