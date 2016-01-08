@@ -18,7 +18,7 @@ $ npm install eslint-plugin-v8-func-inline
 
 # Configuration
 
-Add `plugins` section and specify ESLint-plugin-React as a plugin.
+Add `plugins` section and specify ESLint-plugin-v8-func-inline as a plugin.
 
 Set the max threshold for characters in your `.eslintrc` file
 ```json
