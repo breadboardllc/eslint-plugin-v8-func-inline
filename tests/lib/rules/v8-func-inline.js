@@ -44,16 +44,25 @@ function larger (x, y){
 //------------------------------------------------------------------------------
 
 var ruleTester = new RuleTester();
-var msg = 'Function length between 600 and 615 characters';
 
 ruleTester.run("v8-func-inline", rule, {
-  valid: [{
-      code: smaller.toString()
-    }],
-    invalid: [{
-      code: larger.toString(),
-      errors: [
-        { message: msg }
-      ]
-    }]
+  valid: [
+    {
+      code: smaller.toString(),
+      options: [615]
+    },
+    {
+      code: smaller.toString(),
+      options: [650]
+    }
+  ],
+    invalid: [
+      {
+        code: larger.toString(),
+        options: [615],
+        errors: [
+          { message: 'Function length between 600 and 615 characters' }
+        ]
+      }
+    ]
 });

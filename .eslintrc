@@ -26,7 +26,6 @@
     "globals" : {
         "require": true,
         "module" : true,
-        "xpsBusinessLogic": true   ,
         "it" : true,
         "describe" : true,
         "beforeEach" : true,
@@ -34,8 +33,6 @@
         "after": true,
         "afterEach" : true,
         "exports" : true,
-        "$" : true,
-        "particlesJS": true,
         "process" : true,
     },
     "extends": "eslint:recommended",
