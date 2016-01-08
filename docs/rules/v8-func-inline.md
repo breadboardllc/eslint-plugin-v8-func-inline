@@ -1,7 +1,5 @@
 # ESLint rule to warn if a function is near 600 characters (v8-func-inline)
 
-https://top.fse.guru/nodejs-a-quick-optimization-advice-7353b820c92e#.5zn6zjv94
-
 Node.js's V8 optimizer (crankshaft) inlines the functions whose body length, including the comments, is less than 600 characters.
 
 ## Rule Details
@@ -47,12 +45,16 @@ function smaller (x, y){
 
 ### Options
 
-If there are any options, describe them here. Otherwise, delete this section.
+Set the max threshold for characters in your `.eslintrc` file
+```javascript
+rules : {
+  "v8-func-inline/v8-func-inline" : [1, 615]
+},
+plugins: [
+  "v8-func-inline"
+]
 
-## When Not To Use It
 
-Give a short description of when it would be appropriate to turn off this rule.
-
+```
 ## Further Reading
-
-If there are other links that describe the issue this rule addresses, please include them here in a bulleted list.
+https://top.fse.guru/nodejs-a-quick-optimization-advice-7353b820c92e#.5zn6zjv94
